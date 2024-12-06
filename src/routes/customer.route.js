@@ -14,11 +14,4 @@ app.patch("/:id", controller.editSome);
 app.delete("/:id", controller.delete);
 
 
-
-
-
-
-
-
-
 module.exports = app;
