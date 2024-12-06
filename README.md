@@ -1,1 +1,1 @@
-# Simple Route with ExpressJS
+# Simple Prisma MySQL ands CRUD
