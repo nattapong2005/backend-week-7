@@ -14,7 +14,7 @@ exports.get = async (req, res) => {
 //  SELECT * FROM Category WHERE id = [id]
 exports.getById = async (req, res) => {
         const { id } = req.params;
-        const product = await prisma.category.findUnique({
+        const category = await prisma.category.findUnique({
           where: {
             id: parseInt(id),
           },
@@ -22,5 +22,5 @@ exports.getById = async (req, res) => {
               products: true,
           }
         });
-        res.json(product);
+        res.json(category);
       };
